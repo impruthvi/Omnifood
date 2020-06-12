@@ -13,7 +13,7 @@ html{
     font-size: 20px;
     font-weight: 300;
     background-color: rgba(0, 0, 0, 0.87);
-    color: #555;
+    color: #b4b1b1;
     text-rendering: optimizeLegibility;
 }
 
@@ -24,6 +24,14 @@ html{
 .row{
     max-width: 1140px;
     margin: 0 auto;
+}
+
+section{
+    padding-top: 80px
+}
+
+.box{
+    padding: 1%;
 }
 
 
@@ -82,19 +90,71 @@ header{
 
 /*----------HEADINGS----------*/
 
-h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 240%;
+h1,h2,h3
+{
+    
+   
+    
     text-transform: uppercase;
     font-weight: 300;
-    letter-spacing: 1px;
+  
+    
+}
+h1{
+    margin-top: 0;
+     margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
     white-space: 4px;
+      letter-spacing: 1px;
 }
 
+h2{
+    text-align: center;
+    font-size: 180%;
+    margin-bottom: 30px;
+    white-space: 2px;
+      letter-spacing: 1px;
+    
+    
+}
 
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
 
+h2:after{
+    display: block;
+    height: 2px;
+    content: " ";
+    background-color:#e67e22;
+    width: 100px;
+    margin: 0 auto;
+    margin-top:30px 
+}
+
+/*----------PARAGRAF----------*/
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+        
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*----------BUTTONS----------*/
+
+.icon-big{
+    font-size: 400%;
+    color: #cf6d17;
+    margin-bottom: 10px;
+    display: block
+}
 /*----------BUTTONS----------*/
 .btn:link,
 .btn:visited{
@@ -138,4 +198,45 @@ h1 {
 .btn-ghost:active{
     border: 1px solid #e67e22;
     color: #fff
+}
+
+/*----------------------------------------------*/
+/*MEALS*/
+/*----------------------------------------------*/
+.section-mesl{
+    padding: 0;
+    
+}
+.meal-showcase{
+    list-style: none;
+    width: 100%
+}
+
+.meal-showcase li{
+    display: block;
+    float: left;
+    width: 25%
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden
+}
+
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.25);
+    transition: transform 0.5s
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1)
+}
+
+.section-features .long-copy{
+    margin-bottom: 30px;
 }
